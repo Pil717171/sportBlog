@@ -2,6 +2,9 @@
 
 .App {
   text-align: center;
+  min-height: 100vh;
+  font-family:'Roboto', sans-serif;
+  
 }
 
 .App-logo {
@@ -23,7 +26,17 @@
   color: #09d3ac;
 }
 
-.container {
-  max-width: 1140px;
-  margin: 0 auto;
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #dadde0;
+}
+
+.active:hover {
+  color: #dadde0;
 }

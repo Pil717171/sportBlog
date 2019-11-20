@@ -9,7 +9,6 @@ import { connect } from 'react-redux'
 function App(props) {
   return (
     <div className="App">
-      {props.user}
       <Header/>
       <Main/>
       <Footer/>
