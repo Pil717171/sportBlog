@@ -1,13 +1,15 @@
 import React from 'react';
+import './main.scss'
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Statistic from './components/Statistic/Statistic';
 import Pay from './components/Pay/Pay'
-import { connect } from 'react-redux'
+import background from '../../assets/images/background.jpg';
 
 function Main(props) {
   return (
     <div className="main">
+
         <Switch>
             <Route exact path='/'  render={()=><Home sport={props.sport}/>}/>
             <Route path='/statistic' component={Statistic}/>
@@ -17,10 +19,6 @@ function Main(props) {
   );
 }
 
-function MapStateToProps (state) {
-  return {
-    sport: state.sport
-  }
-}
 
-export default connect(MapStateToProps)(Main);
+
+export default Main;

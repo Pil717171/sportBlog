@@ -1,0 +1,19 @@
+.main {
+    min-height: 100vh;
+    background-image: url('../../assets/images/background.jpg');
+    position: relative;
+    top: -100px;
+    background-size: cover;
+    background-position-y: -300px;
+    z-index: 1;
+    padding-top: 150px;
+    &-image {
+        max-height: 100vh;
+        overflow: hidden;
+        top: -100px;
+        &-image {
+            width: 100%;
+            height: auto;
+        } 
+    }
+}
