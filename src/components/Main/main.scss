@@ -1,14 +1,17 @@
 .main {
+    background: black;
     min-height: 100vh;
     background-image: url('../../assets/images/background.jpg');
     position: relative;
     top: -100px;
-    background-size: cover;
-    background-position-y: -300px;
+    background-size: contain;
+    background-position: center;
     z-index: 1;
     padding-top: 150px;
+    background-repeat: no-repeat;
+
     &-image {
-        max-height: 100vh;
+        // max-height: 100vh;
         overflow: hidden;
         top: -100px;
         &-image {

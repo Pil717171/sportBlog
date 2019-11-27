@@ -12,7 +12,7 @@ function Main(props) {
 
         <Switch>
             <Route exact path='/'  render={()=><Home sport={props.sport}/>}/>
-            <Route path='/statistic' component={Statistic}/>
+            <Route path='/statistics' component={Statistic}/>
             <Route path='/pay' component={Pay}/>
         </Switch>
     </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import './footer.scss';
 import { Container, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import logoFooter from '../../assets/images/logo-footer.png';
 
 
@@ -15,21 +16,21 @@ class Footer extends React.Component {
          <Container>
           <Row className="footer-row">
             <Col xs={2} className="footer-row-logo">
-              <img src={logoFooter} alt='logo'/>
+              <Link to="/"><img src={logoFooter} alt='logo'/></Link>
             </Col>
             <Col xs={6} className="footer-row-items">
               <Row>
                 <Col xs={3}>
-                  <Col xs={12} className="footer-row-items-item"> Home</Col>
-                  <Col xs={12} className="footer-row-items-item">Statistics</Col>
+                  <Link to="/"><Col xs={12} className="footer-row-items-item"> Home</Col></Link>
+                  <Link to="/statistics"><Col xs={12} className="footer-row-items-item">Statistics</Col></Link>
                 </Col> 
                 <Col xs={5}>
-                  <Col xs={12} className="footer-row-items-item">Service and Price</Col>
-                  <Col xs={12} className="footer-row-items-item">FAQ</Col>
+                  <Link to="/pay"><Col xs={12} className="footer-row-items-item">Service and Price</Col></Link>
+                  <Link to="/faq"><Col xs={12} className="footer-row-items-item">FAQ</Col></Link>
                 </Col> 
                 <Col xs={4}>
-                  <Col xs={12} className="footer-row-items-item">Contact Us</Col>
-                  <Col xs={12} className="footer-row-items-item">Privacy</Col>
+                  <Link to="/contactUs"><Col xs={12} className="footer-row-items-item">Contact Us</Col></Link>
+                  <Link to="/privacy"><Col xs={12} className="footer-row-items-item">Privacy</Col></Link>
                 </Col>  
               </Row>
               <Row xs={12}>
